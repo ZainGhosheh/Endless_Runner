@@ -1,0 +1,9 @@
+*.csproj
+*.pidb
+*.unityproj
+*.DS_Store
+*.sln
+*.userprefs
+
+Endless Runner/Library/*
+Endless Runner/Temp/*
