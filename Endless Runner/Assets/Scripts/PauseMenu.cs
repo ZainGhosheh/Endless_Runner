@@ -7,15 +7,17 @@ public class PauseMenu: MonoBehaviour
     public GameObject pauseMenu;
     public static bool isPaused;
 
-    void start()
+    void Start()
     {
         pauseMenu.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
+
+        if (Input.GetButtonDown("Pause"))
         {
+            Debug.Log("pause key pressed");
             if(isPaused)
             {
                 ResumeGame();
