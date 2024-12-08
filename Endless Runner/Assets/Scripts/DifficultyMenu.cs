@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: DifficultyMenu
  * Description: Handles scene transitions based on difficulty level selection.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 12/01/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 12/01/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - Difficulty scenes (Easy, Medium, Hard) must be added to the Unity Build Settings.
  * Acceptable Input Values:
