@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: PlayerCombat
  * Description: Manages the player's combat actions, including attacking enemies within a specified range.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 12/04/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 12/04/24: Initial creation of the script by Abdulahi Mohamed.
  * Preconditions:
  *   - AttackPoint must be set in the Unity Inspector.
  *   - Enemy layers must be configured to include valid enemy GameObjects.
