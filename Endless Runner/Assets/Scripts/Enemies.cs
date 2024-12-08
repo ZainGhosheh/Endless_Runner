@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: Enemies
  * Description: Manages enemy health, handles damage, and triggers destruction upon death.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 12/05/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 12/05/04: Initial creation of the script by Abdulahi Mohamed.
  * Preconditions:
  *   - Enemy GameObject must have a Collider2D and be set on a valid layer.
  *   - maxHealth should be set to a positive integer.
