@@ -2,9 +2,9 @@
  * Code Artifact Name: Spawner
  * Description: Spawns obstacles dynamically at regular intervals, adjusting speed and spawn rate over time.
  * Programmer's Name: Zain Ghosheh
- * Date Created: 
+ * Date Created: 10/27/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 10/27/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - Obstacle prefabs must be assigned in the Unity Inspector.
  *   - GameManager must be configured to trigger onPlay and onGameOver events.
