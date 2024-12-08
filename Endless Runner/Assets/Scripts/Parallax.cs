@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: Parallax
  * Description: Creates a parallax scrolling effect for the background to simulate depth.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 10/29/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 10/29/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - A Renderer component with a material must be assigned to the GameObject.
  * Acceptable Input Values:
