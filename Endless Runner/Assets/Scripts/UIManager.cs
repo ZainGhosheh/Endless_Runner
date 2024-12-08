@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: UIManager
  * Description: Manages the game's UI elements, including score display, game over screen, and scene navigation.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 10/25/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 10/25/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - TextMeshProUGUI and GameObject references must be assigned in the Unity Inspector.
  *   - GameManager must be implemented and properly configured.
