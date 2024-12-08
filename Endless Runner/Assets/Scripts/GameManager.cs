@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: GameManager
  * Description: Central controller for managing game states, scores, and events such as game over.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/09/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/09/24: Initial creation of the script by Olufewa Alonge.
  * Preconditions:
  *   - GameManager must be assigned to a GameObject in the Unity scene.
  * Acceptable Input Values:
