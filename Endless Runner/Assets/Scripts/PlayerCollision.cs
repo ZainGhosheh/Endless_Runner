@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: PlayerCollision
  * Description: Handles player collision events and triggers Game Over logic when hitting obstacles.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/21/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/21/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - GameManager must be implemented and configured.
  *   - Player GameObject must have a Collider2D component.
