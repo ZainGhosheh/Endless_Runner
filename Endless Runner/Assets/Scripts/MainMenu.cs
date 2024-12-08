@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: MainMenu
  * Description: Manages main menu navigation, including starting the game, accessing settings, and exiting the application.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 10/29/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 10/29/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - All referenced scenes (e.g., DifficultyMenu, SettingsMenu) must be added to the Unity Build Settings.
  * Acceptable Input Values:
