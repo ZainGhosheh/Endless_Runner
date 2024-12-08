@@ -1,24 +1,6 @@
 /*
- * Code Artifact Name: [Provide the name of the program or module]
- * Description: [Briefly describe what the program or module does]
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
- * Revision History:
- *   - [Date 1]: [Description of revision 1] by [Author's Name]
- *   - [Date 2]: [Description of revision 2] by [Author's Name]
- * Preconditions:
- *   - [List preconditions for executing the program/module]
- *   - Acceptable Input Values: [Detail acceptable input types/values]
- *   - Unacceptable Input Values: [Detail unacceptable input types/values]
- * Postconditions:
- *   - Return Values: [Explain return values and types]
- *   - Error/Exception Conditions: [List potential exceptions and what they mean]
- * Side Effects:
- *   - [Describe any known side effects caused by the code]
- * Invariants:
- *   - [Describe any constants or conditions that must always hold true]
- * Known Faults:
- *   - [List known bugs or limitations in the code]
+This code came from a github repo by Brackeys
+https://github.com/Brackeys/2D-Movement/blob/master/2D%20Movement/Assets/CharacterController2D.cs
  */
 
 
