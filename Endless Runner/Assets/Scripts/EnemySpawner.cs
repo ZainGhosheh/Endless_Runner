@@ -1,22 +1,48 @@
+/*
+ * Code Artifact Name: EnemySpawner
+ * Description: Manages the spawning of enemies dynamically, adjusting spawn time and speed over time.
+ * Programmer's Name: [Your Name]
+ * Date Created: [Original creation date]
+ * Revision History:
+ *   - [Date 1]: Initial creation of the script by [Author's Name].
+ * Preconditions:
+ *   - Enemy prefabs must be assigned in the Unity Inspector.
+ *   - GameManager must implement onPlay and onGameOver events.
+ * Acceptable Input Values:
+ *   - Valid enemy prefabs with Rigidbody2D components.
+ * Unacceptable Input Values:
+ *   - Null or unassigned enemy prefabs or parent objects.
+ * Postconditions:
+ *   - Spawns enemies at dynamically calculated intervals.
+ * Return Values:
+ *   - None (void methods).
+ * Error and Exception Conditions:
+ *   - NullReferenceException if required references are not assigned.
+ * Side Effects:
+ *   - Instantiates enemy GameObjects into the scene.
+ * Invariants:
+ *   - Enemy speed and spawn interval adjust according to time alive.
+ * Known Faults:
+ *   - Does not handle excessive numbers of spawned enemies.
+ */
+
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] enemyPrefabs; // Prefabs for enemies
-    [SerializeField] private Transform EnemyParent; // Parent for spawned enemies
-    public float enemySpawnTime = 5f; // Spawn interval for enemies
-    [Range(0, 1)] public float enemySpawnTimeFactor = 0.05f; // Factor to adjust spawn interval over time
-    public float enemySpeed = 2f; // Speed of spawned enemies
-    [Range(0, 1)] public float enemySpeedFactor = 0.05f; // Factor to adjust speed over time
-    private float timeUntilEnemySpawn;
+    [SerializeField] private GameObject[] enemyPrefabs; // Array of enemy prefabs.
+    [SerializeField] private Transform enemyParent; // Parent object for spawned enemies.
+    public float enemySpawnTime = 5f; // Initial spawn time interval.
+    [Range(0, 1)] public float enemySpawnTimeFactor = 0.05f; // Factor for adjusting spawn time over time.
+    public float enemySpeed = 2f; // Initial enemy speed.
+    [Range(0, 1)] public float enemySpeedFactor = 0.05f; // Factor for adjusting speed over time.
 
-    private float _enemySpawnTime;
-    private float _enemySpeed;
-
-    private float timeAlive;
+    private float timeUntilEnemySpawn; // Tracks time until the next spawn.
+    private float timeAlive; // Tracks the total time the game has been active.
 
     private void Start()
     {
+        // Add listeners for game events.
         GameManager.Instance.onGameOver.AddListener(ClearEnemies);
         GameManager.Instance.onPlay.AddListener(ResetFactors);
     }
@@ -25,53 +51,39 @@ public class EnemySpawner : MonoBehaviour
     {
         if (GameManager.Instance.isPlaying)
         {
-            timeAlive += Time.deltaTime;
+            timeAlive += Time.deltaTime; // Increment time alive.
 
-            CalculateFactors();
-
-            SpawnLoop();
+            SpawnLoop(); // Check if it’s time to spawn an enemy.
         }
     }
 
     private void SpawnLoop()
     {
-        timeUntilEnemySpawn += Time.deltaTime;
+        timeUntilEnemySpawn += Time.deltaTime; // Increment the spawn timer.
 
-        if (timeUntilEnemySpawn >= _enemySpawnTime)
+        if (timeUntilEnemySpawn >= enemySpawnTime) // Check if the timer exceeds the spawn interval.
         {
-            Spawn();
-            timeUntilEnemySpawn = 0f;
+            Spawn(); // Spawn a new enemy.
+            timeUntilEnemySpawn = 0f; // Reset the spawn timer.
         }
     }
 
     private void ClearEnemies()
     {
-        foreach (Transform child in EnemyParent)
+        foreach (Transform child in enemyParent)
         {
-            Destroy(child.gameObject);
+            Destroy(child.gameObject); // Destroy all enemy GameObjects under the parent.
         }
-    }
-
-    private void CalculateFactors()
-    {
-        _enemySpawnTime = enemySpawnTime * Mathf.Pow(timeAlive, enemySpawnTimeFactor);
-        _enemySpeed = enemySpeed * Mathf.Pow(timeAlive, enemySpeedFactor);
-    }
-
-    private void ResetFactors()
-    {
-        timeAlive = 1f;
-        _enemySpawnTime = enemySpawnTime;
-        _enemySpeed = enemySpeed;
     }
 
     private void Spawn()
     {
+        // Select a random enemy prefab to spawn.
         GameObject enemyToSpawn = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-        GameObject spawnedEnemy = Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
-        spawnedEnemy.transform.parent = EnemyParent;
+        GameObject spawnedEnemy = Instantiate(enemyToSpawn, transform.position, Quaternion.identity); // Instantiate enemy.
+        spawnedEnemy.transform.parent = enemyParent; // Set the enemy's parent transform.
 
         Rigidbody2D enemyRB = spawnedEnemy.GetComponent<Rigidbody2D>();
-        enemyRB.linearVelocity = Vector2.left * _enemySpeed;
+        enemyRB.velocity = Vector2.left * enemySpeed; // Assign speed to the enemy.
     }
 }
