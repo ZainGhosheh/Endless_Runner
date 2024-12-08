@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: MusicClass
  * Description: Controls background music playback across scenes.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/05/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/05/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - AudioSource component must be attached to the GameObject.
  * Acceptable Input Values:
