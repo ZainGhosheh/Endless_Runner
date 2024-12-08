@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: PauseMenu
  * Description: Manages the game's pause functionality, including resuming and navigating back to the main menu.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/13/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/13/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - A UI GameObject for the pause menu must be assigned in the Unity Inspector.
  * Acceptable Input Values:
