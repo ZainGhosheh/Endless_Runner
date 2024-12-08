@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: EnemySpawner
  * Description: Manages the spawning of enemies dynamically, adjusting spawn time and speed over time.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 10/26/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 10/26/24: Initial creation of the script by Mahgoub Husien.
  * Preconditions:
  *   - Enemy prefabs must be assigned in the Unity Inspector.
  *   - GameManager must implement onPlay and onGameOver events.
