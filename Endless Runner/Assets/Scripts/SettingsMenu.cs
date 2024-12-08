@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: SettingsMenu
  * Description: Manages the game's settings, including volume control and navigation to the main menu.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/19/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/19/24: Initial creation of the script by Mahgoub Husein.
  * Preconditions:
  *   - AudioMixer must be configured and assigned in the Unity Inspector.
  * Acceptable Input Values:
