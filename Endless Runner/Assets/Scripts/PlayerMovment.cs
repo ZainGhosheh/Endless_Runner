@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: PlayerMovement
  * Description: Handles player movement and input for running, jumping, and crouching.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 10/27/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 10/27/24: Initial creation of the script by Zain Ghosheh.
  * Preconditions:
  *   - The CharacterController2D component must be assigned to the controller variable.
  *   - Audio clips for jump and crouch must be configured in the AudioSource components.
