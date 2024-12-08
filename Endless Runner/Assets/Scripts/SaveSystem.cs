@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: SaveSystem
  * Description: Provides functionality to save and load game data in JSON format.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/03/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/03/24: Initial creation of the script by Olufewa Alonge.
  * Preconditions:
  *   - Save folder must be accessible within the device's file system.
  * Acceptable Input Values:
