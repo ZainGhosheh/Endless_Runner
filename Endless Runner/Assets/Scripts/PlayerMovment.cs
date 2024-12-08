@@ -11,10 +11,14 @@ public class PlayerMovement : MonoBehaviour
     bool crouch = false; // Variable to store if the player is crouching
     public Joystick joystick;
 
+    public Animator animator; // Reference to the Animator component
+
     private bool isJumping = false; // To track if the player is already jumping
 
     void Update()
     {
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; // Get the horizontal movement of the player
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove)); // Set the Speed parameter in the Animator to the absolute value of horizontalMove
         Input.GetAxisRaw("Horizontal"); // Returns the value of the virtual axis identified by axisName
         AudioSource[] audioSources = GetComponents<AudioSource>(); // Get all AudioSource components
         jumpsound = audioSources[0]; // Assign the first one to jumpsound
@@ -40,12 +44,13 @@ public class PlayerMovement : MonoBehaviour
         if (verticalMove <= -0.5f)
         {
             crouch = true;
-            Debug.Log("Crouch Button Pressed");
+            //Debug.Log("Crouch Button Pressed");
         }
         else
         {
             crouch = false;
         }
+
 
         // Handle crouch and jump via keyboard (optional)
         if (Input.GetButtonDown("Vertical") && !isJumping)
@@ -57,14 +62,24 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Crouch"))
         {
+            crouch = true;
             Debug.Log("Crouch Button Pressed");
             crouchsound.Play();
-            crouch = true;
+            
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
         }
+    }
+
+
+
+
+    public void onCrouching(bool isCrouching)
+    {
+        //Debug.Log("Crouching");
+        animator.SetBool("IsCrouching", isCrouching);
     }
 
     void FixedUpdate()

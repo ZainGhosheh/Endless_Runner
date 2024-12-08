@@ -20,7 +20,10 @@ public class GameManager : MonoBehaviour
     #endregion
 
 
-    public float currentScore = 0f;
+    public float currentScore;
+
+    public float copyScore;
+
     public Data data;
     public bool isPlaying = false;
     public UnityEvent onPlay = new  UnityEvent();
@@ -28,8 +31,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-     
+        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicClass>().PlayMusic();
         string loadedData = SaveSystem.Load("save");
+        currentScore = 0f;
         if(loadedData != null){
             data = JsonUtility.FromJson<Data>(loadedData);
         } else{
@@ -62,6 +66,9 @@ public class GameManager : MonoBehaviour
 
     public void gameOver()
     {
+
+        copyScore = currentScore;
+
         if (data.highScore < currentScore)
         {
             data.highScore = currentScore;
@@ -79,4 +86,10 @@ public class GameManager : MonoBehaviour
      public string PrettyhighScore() {
         return Mathf.RoundToInt(data.highScore).ToString();
     }
+
+    public string PrettyCopyScore() {
+        return Mathf.RoundToInt(copyScore).ToString();
+    }
 }
+
+

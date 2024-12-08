@@ -40,4 +40,10 @@ public class UIManager : MonoBehaviour
     {
         scoreUI.text = gm.PrettyScore();
     }
+
+
+    public void CopyScoreToClipboard()
+    {
+        GUIUtility.systemCopyBuffer = "Score: " + gm.PrettyCopyScore();
+    }
 }

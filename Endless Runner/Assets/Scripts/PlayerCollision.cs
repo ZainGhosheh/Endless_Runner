@@ -12,10 +12,11 @@ public class PlayerCollision : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("Enemy"))
         {
             gameObject.SetActive(false);
             GameManager.Instance.gameOver();
         }
+
     }
 }
