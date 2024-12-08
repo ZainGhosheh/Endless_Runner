@@ -1,10 +1,10 @@
 /*
  * Code Artifact Name: Data
  * Description: A serializable class to store and manage player data, such as high scores.
- * Programmer's Name: [Your Name]
- * Date Created: [Original creation date]
+ * Programmer's Name: Ghosheh Zain, Mohamed Abdulahi, Husien Mahgoub, Alonge Olufewa
+ * Date Created: 11/02/24
  * Revision History:
- *   - [Date 1]: Initial creation of the script by [Author's Name].
+ *   - 11/02/24: Initial creation of the script by Ghosheh Zain.
  * Preconditions:
  *   - The class must be marked as [System.Serializable] to enable JSON serialization and deserialization.
  * Acceptable Input Values:
